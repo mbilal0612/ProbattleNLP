@@ -24,8 +24,8 @@ vector_store = PineconeVectorStore(index=index, embedding=embeddings, namespace=
 # Making a Retriever Object (Allows you to find similar documents in your Pinecone index, given a query)
 
 retriever = vector_store.as_retriever(
-    search_type="similarity_score_threshold",
-    search_kwargs={"k": 15, "score_threshold": 0.8,"filter": {"source": "trusted"},},
+    search_type="similarity",
+    search_kwargs={"k": 15, "filter": {"source": "trusted"}},
 )
 
 # Making a ChatGroq Object (This is the LLM model that will generate responses)
@@ -37,7 +37,7 @@ llm = ChatGroq(model="llama3-8b-8192", stop_sequences= None, temperature=0)
 def format_docs(docs):
     print("docs:", docs)
     print()
-    return "\n\n".join(doc.page_content for doc in docs)
+    return "\n\n".join(f"{i+1}. {doc.page_content}" for i, doc in enumerate(docs))
 
 # Function to validate the query
 
