@@ -1,0 +1,24 @@
+,S. No,Courses,Course  code,Credit  hours,Pre-  requisite
+0,1,Numerical Treatment of P.D.E.,MTS621,3,MTS515
+1,2,Financial Mathematics,MTS625,3,MTS537
+2,3,Computational Astronomy,MTS637,3,MTS545
+3,4,Applicable Modern Geometry Il,MTS645,3,MTS549
+4,5,Algebraic Geometry II,MTS649,3,MTS553
+5,6,Algebraic Cycles II,MTS653,3,MTS366
+6,7,Algebraic Curves,MTS655,3,MTS557
+7,8,Iterative Methods for Sparse Linear Systems,MTS656,3,MTS525
+8,9,Poly logarithms,MTS657,3,MTS565
+9,10,Timescale calculus,MTS658,3,MTS451
+10,11,Computational Fluid Dynamics,MTS659,3,MTS514
+11,12,Multivariate Statistical Analysis,MTS661,3,MTS539
+12,13,Analysis on Manifolds,MTS662,3,"MTS242,  MTS203"
+13,14,Plane Curves and Singularities,MTS664,3,MTS515
+14,15,Mathematical Physics II,MTS665,3,MTS537
+15,16,Advanced Topology,MTS666,3,MTS545
+16,17,General Relativity and Cosmology,MTS667,3,MTS549
+17,18,Scientific Programming,MTS668,3,MTS553
+18,19,Convex Analysis,MTS669,3,MTS366
+19,20,Algebraic Number Theory,MTS670,3,MTS557
+20,21,Monomial Algebra,MTS671,3,MTS525
+21,22,Topics in Homological Algebra,MTS672,3,MTS565
+22,23,Computational Continuum Mechanics,MTS673,3,MTS451

@@ -1,0 +1,27 @@
+,Course code,Course title,Credit hours,Pre-requisite
+0,CSE308,Web Based Application  Development,3,CSE341
+1,CSE450,Application Development for Mobile  Devices,3,-
+2,CSE466,Technology Product Development,3,CSE312
+3,CSE475,Compiler Construction,3,-
+4,CSE465,Competitive Programming,3,CSE247
+5,CSE356,Rust Programming,3,CSE142
+6,CSE318,Design Patterns,3,CSE247
+7,CSE476,Software Architecture & Design,3,-
+8,CSE474,Introduction to DevOps,3,-
+9,CSE343,Data Warehousing,3,CSE341
+10,CSE459,Business Intelligence,3,CSE307
+11,CSE454,Introduction to Computer Vision,3,CSE248
+12,CSE462,Introduction to Image Processing,3,CSE247
+13,CSE472,Introduction to Machine Learning,3,-
+14,CSE471,Neural Networks and Deep Learning,3,CSE307
+15,CSE473,Introduction to Text Analytics,3,-
+16,CSE469,Introduction to Network Data  Analysis,3,-
+17,CSE460,Robotics,3,CSE307
+18,CSE355,Introduction to Blockchain,3,-
+19,CSE352,Computer Graphics,3,-
+20,CSE353,Game Design and Development,3,-
+21,CSE358,Elements of Game Design,3,-
+22,CSE470,Introduction to Cryptography,3,-
+23,CSE357,Computer Security,3,-
+24,CSE455,Network Security,3,CSE341
+25,CSE463,Introduction to  Bioinformatics,3,CSE247

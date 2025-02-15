@@ -1,0 +1,9 @@
+,,Courses,Course code,Credit hours,Pre- requisite
+0,1,NumericalTreatmentofP.D.E.,MTS621,3,MTS515
+1,2,Financial Mathematics,MTS625,3,MTS537
+2,3,Computational Astronomy,MTS637,3,MTS545
+3,4,Applicable ModernGeometryIl,MTS645,3,MTS549
+4,5,Algebraic Geometry II,MTS649,3,MTS553
+5,6,Algebraic Cycles II,MTS653,3,MTS366
+6,7,AlgebraicCurves,MTS655,3,MTS557
+7,8,Iterative MethodsforSparseLinearSystems,MTS656,,MTS525

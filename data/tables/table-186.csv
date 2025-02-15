@@ -1,0 +1,6 @@
+,Junior,Semester - 5,Course  code,Credit  hours,Course type,Pre-requisite
+0,1,Real Analysis,-,3,Mathematics Core,-
+1,2,Statistical Modeling,MTS202,3,Mathematics Core,MTS102
+2,3,Numerical Analysis,MTS306,3,Mathematics Core,MTS232
+3,4,Introduction to  Quantum Mechanics,PHY4xx,3,Science Core,-
+4,5,Data Structures,CSE247,4,Science Core,CSE141

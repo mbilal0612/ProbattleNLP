@@ -1,0 +1,13 @@
+,S. No,Courses,Course  code,Credit  ho3 urs,Pre-  requisite
+0,1,Non-Linear Dynamics and Chaos,MTS507,3,", MTS203 MTS241"
+1,2,Measure Theory and Integration,MTS512,3,MTS512
+2,3,Topics in Commutative Algebra,MTS514,3,MTS513
+3,4,Scientific Computing,MTS521,3,-
+4,5,Stochastic Processes II,MTS525,3,MTS304
+5,6,Stochastic Differential Equations,MTS529,3,MTS304
+6,7,Topics in Commutative Algebra,MTS514,3,MTS513
+7,8,Integral Equations-I,MTS533,3,-
+8,9,Mathematical Astronomy,MTS537,3,-
+9,10,Homological Algebra,MTS539,3,MTS513
+10,11,Computational Algebraic Geometry,MTS541,3,MTS513
+11,12,Applicable Modern Geometry I,MTS545,3,"1,   , MTS51 MTS513 MTS616"

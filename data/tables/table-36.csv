@@ -1,0 +1,11 @@
+,S. No.,Course title,Course   code,Credit   hours,Pre-   requisite
+0,1,Globalization & International Law,ACC231,3,-
+1,2,Advanced Managerial Accounting,ACC310,3,ACC220
+2,3,Financial Reporting,ACC315,3,ACC201
+3,4,Advanced Auditing,ACC325,3,ACC320
+4,5,Accounting Information System with SAP,ACC330,3,ACC201
+5,6,Advanced Financial Reporting,ACC401,3,ACC315
+6,7,Politics and Law,LAW105,3,-
+7,8,Corporate Law,LAW305,3,LAW205
+8,9,Legal & Regularity Environment,LAW310,3,LAW205
+9,10,Advanced Taxation,LAW401,3,LAW303

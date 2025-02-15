@@ -1,0 +1,26 @@
+,S.  No.,Course title,Course code,Credit  hours,Pre- requisite
+0,1,Complex Analysis,MTS302,3,MTS341
+1,2,Abstract Algebra I,MTS305,3,MTS203
+2,3,Numerical Analysis,MTS306,3,MTS232
+3,4,Functional Analysis I,MTS411,3,MTS341
+4,5,Functional Analysis II,MTS412,3,MTS411
+5,6,Abstract Algebra II,MTS413,3,MTS305
+6,7,Numerical Solutions of PDE,MTS431,3,MTS414
+7,8,Integral Equations,MTS432,3,MTS303
+8,9,Advanced Numerical Analysis I,MTS433,3,MTS414
+9,10,Advanced Numerical Analysis II,MTS434,3,MTS433
+10,11,Differential Geometry,MTS435,3,"MTS204,"
+11,12,Fluid Dynamics I,MTS437,3,-
+12,13,Fluid Dynamics II,MTS438,3,-
+13,14,Financial Mathematics with a  Computational Approach,MTS441,3,-
+14,15,Computational Finance,MTS442,3,-
+15,16,Topology I,MTS451,3,MTS341
+16,17,Scientific Computing for Linear,MTS414,3,MTS413
+17,18,Modern Algebra I,MTS443,3,MTS413
+18,19,Modern Algebra II,MTS444,3,MTS413
+19,20,Measure Theory I,MTS445,3,-
+20,21,Measure Theory II,MTS446,3,-
+21,22,Operations Research I,MTS447,3,-
+22,23,Operations Research II,MTS448,3,-
+23,,Financial Engineering,MTS453,3,MTS441
+24,25,,,,

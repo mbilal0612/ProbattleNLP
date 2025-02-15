@@ -1,0 +1,23 @@
+,Course title,Course  code,Credit  hours,Pre-  requisite
+0,Machine Learning - I,CSE602,3,
+1,Machine Learning - II,CSE603,3,
+2,Bioinformatics Algorithms,CSE607,3,-
+3,Advanced Analysis of Algorithms,CSE651,3,-
+4,Combinatorial Optimization,CSE654,3,-
+5,Probabilistic Reasoning,CSE655,3,-
+6,Computational Intelligence,CSE659,3,-
+7,Semantic Web,CSE661,3,CSE665
+8,Parallel Processing,CSE662,3,-
+9,Information Retrieval and Web Search-I,CSE665,3,-
+10,Information Retrieval and Web Search-II,CSE666,3,-
+11,Big Data Analytics,CSE668,3,"CSE248, MTS102"
+12,Deep Learning,CSE669,3,ICT651
+13,Social Network Analysis,CSE670,3,"CSE141, CSE248, MTS102"
+14,Computer Communication Network and Simulation,ICT651,3,ICT659
+15,Computer Communication Network and Simulation II,ICT654,3,CSE248
+16,Wireless Sensor Networks,ICT659,3,-
+17,Advanced Topics In Wireless Sensor Networks,ICT660,3,-
+18,WSN Protocols And Applications,ICT662,3,MIS651
+19,Theoretical Foundations of IS,MIS651,3,-
+20,Advanced Research Topics In IS,MIS652,3,-
+21,Advanced Theoretical Concepts in IS,MIS653,3,-

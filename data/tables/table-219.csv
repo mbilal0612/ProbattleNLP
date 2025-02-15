@@ -1,0 +1,11 @@
+,S. No,Courses,Course  code,Credit  hours,Pre-  requisite
+0,24,Algebraic Topology,MTS674,3,MTS514
+1,25,Category Theory,MTS606,3,MTS539
+2,26,Quantum Mechanics I,MTS675,3,"MTS 242,  MTS 203"
+3,27,Special Relativity,MTS676,3,MTS515
+4,28,De Rham Cohomology,MTS677,3,MTS537
+5,29,Topics of Special Interest I,MTS691,3,MTS545
+6,30,Topics of Special Interest II,MTS692,3,MTS549
+7,31,Topics in Homological Algebra,MTS621,3,MTS553
+8,32,Computational Algebraic Topology,MTS681,3,-
+9,33,Topology and Category Theory,MTS 686,3,-

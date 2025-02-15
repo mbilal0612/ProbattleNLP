@@ -1,0 +1,12 @@
+,S. No.,Course   title,Course code,Credit hours,Pre requisite -
+0,1,Fixed  Income  Investments,FIN424,3,FIN401
+1,2,Investment Banking,FIN451,3,FIN401
+2,3,Security Analysis,FIN453,3,FIN401
+3,4,Corporate Finance,FIN454,3,FIN401
+4,5,Portfolio Management,FIN455,3,FIN401
+5,6,Financial Risk Management,FIN456,3,FIN401
+6,7,Derivatives,FIN457,3,FIN401
+7,8,Treasury and Funds Management,FIN462,3,FIN401
+8,9,Islamic Banking & Finance,FIN463,3,-
+9,10,Marketing of Financial Service,FIN467,3,FIN401
+10,11,Venture Capital & Innovation in Finance,FIN468,3,FIN401

@@ -1,0 +1,15 @@
+,,Electives.(More courses may be added to this list),Course  code.,Credit  hours.,Pre-requisite.
+0,1,Probabilistic Reasoning,CSE655,3,"Maths for  DS,  ML-1"
+1,2,Computational Intelligence,CSE659,3,"Maths for  DS,  ML-1"
+2,3,Computer Vision,CSE660,3,"Maths for  DS,  ML-1"
+3,4,Computational Intelligence,CSE659,3,"Maths for  DS,  ML-1"
+4,5,Information Retrieval,CSE665,3,"Maths for  DS,  ML-1"
+5,6,Deep Learning,CSE669,3,"Maths for  DS,  ML-1"
+6,7,Social Network Analysis,CSE670,3,"Maths for  DS,  ML-1"
+7,8,Deep Learning,CSE673,3,"Maths for  DS,  ML-1"
+8,9,Text Analytics,CSE674,3,"Maths for  DS,  ML-1"
+9,10,Machine Learning-II (Unsupervised Learning),CSE603,3,"Maths for  DS,  ML-1"
+10,11,Data and Information Visualization,CSE510,3,Completion of all core  courses
+11,12,Internet of Things,CSE565,3,Completion of all core  courses
+12,13,Cyber Security Operations,CSE582,3,Completion of all core  courses
+13,14,Cloud Security,CSE550,3,Completion of all core  courses

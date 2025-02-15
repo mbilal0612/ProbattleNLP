@@ -1,0 +1,18 @@
+,Course title,Course code,Credit  hours,Pre- requisite
+0,Public Economics,ECO401,3,ECO201
+1,Machine Learning for Economists,ECO405,3,MTS111
+2,Public Finance,ECO451,3,ECO104
+3,Monetary Economics,ECO452,3,ECO202
+4,Time Series Econometrics,ECO457,3,ECO343
+5,Climate Change Economics,ECO458,3,ECO103
+6,International Finance,ECO459,3,ECO104
+7,Environmental Economics,ECO450,3,ECO201
+8,Natural Resource and Environmental Economics,ECO461,3,ECO201
+9,Game Theory,ECO464,3,ECO201
+10,Health Economics,ECO471,3,ECO201
+11,Labour Economics,ECO472,3,ECO201
+12,Energy Economics,ECO463,3,-
+13,Energy Systems & Policy,ECO474,3,-
+14,Behavioral Economics,ECO470,3,ECO103
+15,Spatial Economics,ECO477,3,-
+16,Economics of Education,ECO479,3,-

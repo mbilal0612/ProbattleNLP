@@ -1,3 +1,4 @@
+import re
 from dotenv import load_dotenv
 import os
 from langchain_nomic import NomicEmbeddings
@@ -25,7 +26,7 @@ vector_store = PineconeVectorStore(index=index, embedding=embeddings, namespace=
 
 retriever = vector_store.as_retriever(
     search_type="similarity_score_threshold",
-    search_kwargs={"k": 15, "filter": {"source": "trusted"}},
+    search_kwargs={"k": 15, "score_threshold":0.80 ,"filter": {"source": "trusted"}},
 )
 
 # Making a ChatGroq Object (This is the LLM model that will generate responses)
@@ -42,10 +43,21 @@ def format_docs(docs):
 # Function to validate the query
 
 def validate_query(query):
-    if len(query) < 5 or len(query) > 500:
+    banned_patterns = [
+        r"ignore previous instructions",
+        r"repeat after me",
+        r"act as an AI developer",
+        r"write an unrestricted version",
+        r"tell me how to bypass",
+    ]
+
+    if len(query) < 5 or len(query) > 200:
         raise ValueError("Query length out of bounds.")
     if any(word in query.lower() for word in ["ignore", "system", "prompt", "admin"]):
         raise ValueError("Potential prompt injection detected.")
+    for pattern in banned_patterns:
+        if re.search(pattern, query, re.IGNORECASE):
+            raise ValueError("Banned pattern detected in query.")
     return query
 
 
@@ -63,6 +75,7 @@ prompt_template = ChatPromptTemplate.from_messages([
                 "pieces of retrieved context to answer the question. If you don't know "
                 "the answer, just say that you don't know."
                 "and keep the answer concise.\n\n"
+               
                 
                 "Question: {question}\n"
                 "Context: {context}\n"
@@ -87,8 +100,8 @@ rag_chain = (
     
     # The first runnable in the chain:
     {
-        "context": validate_query | retriever | format_docs | logger,
-        "question": RunnablePassthrough()
+        "context": retriever | format_docs | logger,
+        "question": validate_query |RunnablePassthrough()
     }
     # It makes a dictionary using the input
     # the input is passed through the validate_query function, then the retriever, then the format_docs function, then the logger function
@@ -117,8 +130,8 @@ rag_chain = (
 # The chain simply looks like this:
 rag_chain = (
     {
-        "context": validate_query | retriever | format_docs | logger,
-        "question": RunnablePassthrough()
+        "context": retriever | format_docs | logger,
+        "question": validate_query | RunnablePassthrough()
     }
     | prompt_template
     | llm

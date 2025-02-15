@@ -1,0 +1,12 @@
+,S. No.,Course title,Course  code,Credit  hours,Pre- requisite
+0,1,Calculus-I,MTS101,3,-
+1,2,Calculus-II,MTS232,3,MTS101
+2,3,Multivariable Calculus,MTS424,3,MTS232
+3,4,Linear Algebra,MTS203,3,MTS101
+4,5,Discrete Mathematics,MTS211,3,-
+5,6,Introduction to Differential Equations,MTS241,3,MTS101
+6,7,Stochastic Process,MTS304,3,MTS231
+7,8,Optimization Techniques,MTS330,3,"MTS101,  MTS203"
+8,9,Partial Differential Equations,MTS436,3,MTS241
+9,10,Real Analysis I,MTS341,3,MTS232
+10,11,Probability Theory,MTS231,3,-

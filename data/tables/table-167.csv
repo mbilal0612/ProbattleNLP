@@ -1,0 +1,7 @@
+,Code,Title,Credit  hours,Pre-requisite,Category
+0,CSE307,Introduction to Artificial  Intelligence,3,CSE247,CS Core
+1,CSE248,Computer Communication  & Networking,4,"CSE101,  CSE142",CS Core
+2,CSE309,Theory of Automata,3,"CSE141,  MTS211",CS Core
+3,CSE345,Computer Architecture &  Assembly Language,4,"CSE241,  CSE247",CS Core
+4,SSC151,Pakistan History,2,-,General  Education
+5,-,Entrepreneurship,2,-,General  Education

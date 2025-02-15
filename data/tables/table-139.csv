@@ -1,0 +1,12 @@
+,Course title,Course code,Credit hours,Pre-requisite
+0,Theories and Critical Approaches in Development,DEV533,3,-
+1,Anthropology & Development,DEV534,3,-
+2,Policy Analysis: Theory & Practice,DEV535,3,-
+3,Research Methods in Development,DEV536,3,-
+4,Core elective,Course code,Credit hours,Pre-requisite
+5,Elective I,ECO631,3,ECO531
+6,Elective II,-,3,-
+7,Elective III,-,3,-
+8,Elective IV,-,3,-
+9,Thesis,Course code,Credit hours,Pre-requisite
+10,MS thesis*,DEV591,6,-

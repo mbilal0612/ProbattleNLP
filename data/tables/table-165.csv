@@ -1,0 +1,6 @@
+,Code,Title,Credit  hours,Pre-requisite,Category
+0,CSE142,Digital Logic  Design,4,"CSE101, MTS211",CS Core
+1,HUM20,Data Structures,4,"CSE142, MTS211",CS Core
+2,SCI102,Linear Algebra,3,MTS101,Program Core
+3,MTS211,Numerical Analysis,3,MTS113,Program Core
+4,-,Social Science Elective,3,-,General  Education

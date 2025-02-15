@@ -1,0 +1,11 @@
+,S. No,Courses,Course  code,Credit  hours,Pre-  requisite
+0,13,Algebraic Geometry I,MTS549,3,MTS514
+1,14,Scientific Computing and Software,MTS551,3,MTS521
+2,15,Algebraic Cycles I,MTS553,3,MTS513
+3,16,Arithmetic Algebraic Geometry,MTS557,3,MTS513
+4,17,Exploratory Data Analysis,MTS561,3,-
+5,18,Mathematical Physics I  -,MTS565,3,-
+6,19,Statistical Data Mining and Knowledge Discovery,MTS569,3,-
+7,20,Statistical Machine Learning,MTS573,3,-
+8,21,Galois Theory,MTS577,3,MTS513
+9,22,Smooth Manifolds,MTS581,3,MTS510
