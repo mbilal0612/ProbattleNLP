@@ -66,11 +66,11 @@ pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
 
 index_name = "nlp"
 
-# if index_name not in pc.list_indexes():
-#     pc.create_index(index_name, dimension=768, metric="cosine", spec=ServerlessSpec(
-#         cloud="aws",
-#         region="us-east-1"
-#     ),)
+if index_name not in pc.list_indexes():
+    pc.create_index(index_name, dimension=768, metric="cosine", spec=ServerlessSpec(
+        cloud="aws",
+        region="us-east-1"
+    ),)
 
 index = pc.Index(index_name)
 
@@ -89,7 +89,8 @@ for i in range(len(embedded_data)):
             "values": vector, # put the embedding vector here
             "metadata": {  # put the actual document's text here
                 "text": formatted_sentence,
-                # "genre" : "documentary" # other optional metadata
+                "source": "trusted"
+                # other optional metadata
             }
         },
     ],

@@ -25,11 +25,10 @@ vector_store = PineconeVectorStore(index=index, embedding=embeddings, namespace=
 
 retriever = vector_store.as_retriever(
     search_type="similarity_score_threshold",
-    search_kwargs={"k": 10, "score_threshold": 0.8},
+    search_kwargs={"k": 15, "score_threshold": 0.8,"filter": {"source": "trusted"},},
 )
 
 # Making a ChatGroq Object (This is the LLM model that will generate responses)
-
 
 llm = ChatGroq(model="llama3-8b-8192", stop_sequences= None, temperature=0)
 
@@ -40,19 +39,29 @@ def format_docs(docs):
     print()
     return "\n\n".join(doc.page_content for doc in docs)
 
+# Function to validate the query
 
-# Making a custon prompt which had two variables, "context" and question
+def validate_query(query):
+    if len(query) < 5 or len(query) > 500:
+        raise ValueError("Query length out of bounds.")
+    if any(word in query.lower() for word in ["ignore", "system", "prompt", "admin"]):
+        raise ValueError("Potential prompt injection detected.")
+    return query
 
-# Note:This prompt_template expects a dictionary/JSON with the keys "context" and "question" as input
+
+# Making a custom prompt which had two variables, "context" and question
+
+# Note: This prompt_template expects a dictionary/JSON with the keys "context" and "question" as input
 
 prompt_template = ChatPromptTemplate.from_messages([
     HumanMessagePromptTemplate(
         prompt=PromptTemplate(
             input_variables=["context", "question"],
             template=( # The constructed prompt from the variables
+                "You are a strict assistant only answer questions based on the data provided."
                 "You are an assistant for question-answering tasks. Use the following "
                 "pieces of retrieved context to answer the question. If you don't know "
-                "the answer, just say that you don't know. Use three sentences maximum "
+                "the answer, just say that you don't know."
                 "and keep the answer concise.\n\n"
                 
                 "Question: {question}\n"
@@ -70,23 +79,20 @@ def logger(input):
     print(input)
     return input
 
-
 # A chain with the modified prompt
 
-
- 
 rag_chain = (
     # The starting input to all these is passed in the invoke function
     # e.g rag_chain.invoke("Tell me about the paper: Attention is all you Need")
     
     # The first runnable in the chain:
     {
-        "context": retriever | format_docs | logger,
+        "context": validate_query | retriever | format_docs | logger,
         "question": RunnablePassthrough()
     }
     # It makes a dictionary using the input
-    # the input is passed through the retriever, then the format_docs function, then the logger function
-    # the retriever finds similar documents in the Pinecone index, and the format_docs function formats them
+    # the input is passed through the validate_query function, then the retriever, then the format_docs function, then the logger function
+    # the validate_query function validates the query, the retriever finds similar documents in the Pinecone index, and the format_docs function formats them
     # the logger function logs the input and returns it, 
     # RunnablePassthrough is a simple function that returns the input,
     # which means the 
@@ -100,7 +106,7 @@ rag_chain = (
     # The third runnable is the LLM model that generates the response
     | llm
     # The LLM model generates a response using the prompt
-    # It's lke passing something to the ChatGPT model and getting a response
+    # It's like passing something to the ChatGPT model and getting a response
     
     # The fourth runnable is the output parser that converts the output to a string
     | StrOutputParser() 
@@ -108,10 +114,10 @@ rag_chain = (
     # The output parser takes the response.content field and returns it as a string
 )
 
-# The chain simply looks likes this:
+# The chain simply looks like this:
 rag_chain = (
     {
-        "context": retriever | format_docs | logger,
+        "context": validate_query | retriever | format_docs | logger,
         "question": RunnablePassthrough()
     }
     | prompt_template
@@ -119,4 +125,4 @@ rag_chain = (
     | StrOutputParser()
 )
 
-respnse = rag_chain.invoke("Tell me about the paper: Attention is all you Need")
+response = rag_chain.invoke("Give a list of teachers teaching DATA STRUCTURES")
