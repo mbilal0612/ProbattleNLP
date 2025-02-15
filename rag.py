@@ -24,7 +24,7 @@ vector_store = PineconeVectorStore(index=index, embedding=embeddings, namespace=
 # Making a Retriever Object (Allows you to find similar documents in your Pinecone index, given a query)
 
 retriever = vector_store.as_retriever(
-    search_type="similarity",
+    search_type="similarity_score_threshold",
     search_kwargs={"k": 15, "filter": {"source": "trusted"}},
 )
 
